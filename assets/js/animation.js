@@ -22,9 +22,9 @@ function animeScroll() {
     target.forEach((e) => {
         if((windowTop) > e.offsetTop) {
             e.classList.add(animationClass);            
-        } /*else {
+        } else {
             e.classList.remove(animationClass);
-        }*/
+        }
     })
 }
 

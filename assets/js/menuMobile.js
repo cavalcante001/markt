@@ -16,13 +16,14 @@ function menuToggle(e) {
     e.currentTarget.setAttribute('aria-expanded', active);  
     
     if(active) { 
-        e.currentTarget.setAttribute('aria-label', 'Fechar Menu');       
+        e.currentTarget.setAttribute('aria-label', 'Fechar Menu');      
+        document.querySelector('.menuMobile .fa-bars').style.display = 'block';
+        document.querySelector('.menuMobile .fa-times').style.display = 'none'; 
+       
+    } else {
+        e.currentTarget.setAttribute('aria-label', 'Abrir Menu');        
         document.querySelector('.menuMobile .fa-bars').style.display = 'none';
         document.querySelector('.menuMobile .fa-times').style.display = 'block';
-    } else {
-        e.currentTarget.setAttribute('aria-label', 'Abrir Menu');       
-        document.querySelector('.menuMobile .fa-bars').style.display = 'block';
-        document.querySelector('.menuMobile .fa-times').style.display = 'none';
     }
 }
 

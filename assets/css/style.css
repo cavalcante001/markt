@@ -583,6 +583,9 @@ hr {
     color: #ccc;
     font-size: 1.5rem;
 }   
+.social-item a {
+    color: #999;
+}
 .social-item a:visited {
     color: #999;
 }
